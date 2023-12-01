@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>BillSplitter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>BillSplitter</h1>
+            <p>Podziel się rachunkiem ze znajomymi</p>
+        </div>
+        <div class="container">
+            <h2>Kwota do zapłaty</h2>
+            <input type="number" class="bill" pattern="[0-9]">
+            <h2>Ilość osób:</h2>
+            <input type="number" class="people">
+            <h2>Napiwek</h2>
+
+            <select class="tip">
+                <option value="">--Please choose an option--</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+                <option value="0.3">30%</option>
+                <option value="0.4">40%</option>
+            </select>
+            <button class="calculate">Oblicz</button>
+            <p class="score"></p>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
